@@ -1,0 +1,149 @@
+<!-- =====================================================================
+                                    IMPORTANTE
+Este archivo html fue creado para el final de desarrollo web, y lo ensamble para
+el proyecto final de JS. Este archivo no cuenta con ninguna implementacion de JS, el archivo que
+tiene toda la implementaciond e JS es tienda.html y las respectivas carpetas de JS y su archivo de
+css. Existen 2 archivos de css, stylejs.css es el que use para dar formato a las cosas que cree
+para el tp final de JS
+========================================================================-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Wikisaur Home, sitio completamente dedicado a los dinosaurios, encontraras su historia, tipos de dinosaurios, paleontologia y peliculas." />
+  <meta name="keywords"
+    content="WIKI, DINOSAURIOS, DINOSAUR, WIKIPEDIA, JURASSIC, PARK, PREHISTORICO, PREHISTORIC, REX, TRICERATOPS, PALEONTOLOGIA, PELICULAS" />
+  <link rel="icon" href="./multimedia/img/logosmall.png" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Wikisaur | Home</title>
+</head>
+
+<body>
+  <header>
+    <nav class="barra container">
+      <ul class="barra__lista">
+        <div class="row mb-3 justify-content-center">
+          <li class="col-6 col-lg-3">
+            <h1 class="barra__lista__logo">wikisaur</h1>
+          </li>
+        </div>
+        <div class="row justify-content-center mt-5">
+          <li class="col-4 col-lg-2 fs-lg-3 fs-6 mt-3">
+            <a href="./index.html" class="barra__lista__links">Home</a>
+          </li>
+          <li class="col-4 col-lg-2 fs-lg-3 fs-6 mt-3">
+            <a href="./views/history.html" class="barra__lista__links">Historia</a>
+          </li>
+
+          <li class="col-4 col-lg-2 fs-lg-3 fs-6 mt-3">
+            <a href="./views/dinosaurs.html" class="barra__lista__links">Especies</a>
+          </li>
+          <li class="col-5 col-lg-3 fs-lg-3 fs-6 mt-3">
+            <a href="./views/paleontology.html" class="barra__lista__links">Paleontologia</a>
+          </li>
+          <li class="col-5 col-lg-2 fs-lg-3 fs-6 mt-3">
+            <a href="./views/tienda.html" class="barra__lista__links">Tienda</a>
+          </li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="intro">
+      <div
+        class="container d-flex flex-column flex-lg-row justify-content-center align-content-center align-items-center">
+        <div class="intro__parrafo" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="300">
+          <h1 class="intro__parrafo__titulo">#DINOSAURIOS</h1>
+          <h3 class="intro__parrafo__subtitulo">
+            Todo lo que queres saber de tus animales prehistoricos
+          </h3>
+          <h3 class="intro__parrafo__subtitulo">
+            favoritos esta en WIKISAUR
+          </h3>
+        </div>
+        <img src="./multimedia/img/intro1.png" alt="dinosaurios inicio wiki" class="intro__img" />
+      </div>
+    </section>
+    <section class="definicion">
+      <p class="definicion__texto">
+        Los dinosaurios, o también llamados <em>"lagartos terribles"</em>, son
+        un grupo fascinante de animales que se diversificaron en el planeta
+        Tierra hace aproximadamente 230 millones de años atrás. Durante más de
+        130 millones de años, fueron los vertebrados que dominaron el planeta
+      </p>
+    </section>
+    <section class="secciones container">
+      <h3 class="secciones__titulo">Lo que vas a encontrar</h3>
+      <div class="row justify-content-lg-between justify-content-center">
+        <!-- manejo los articles con el grid de boostrap -->
+        <article class="secciones__articulo col-10 col-sm-8 col-md-5 col-lg-3">
+          <img class="secciones__articulo__img" src="./multimedia/img/icons1.png" alt="seccion historia dinosaurios" />
+          <p class="secciones__articulo__descrpcion">
+            Conoce que eran los Dinosaurios, todo sobre su historia evolutiva,
+            clasificacion y extinción
+          </p>
+          <a href="./views/history.html">
+            <button class="secciones__articulo__boton">#Historia</button>
+          </a>
+        </article>
+        <article class="secciones__articulo col-10 col-sm-8 col-md-5 col-lg-3">
+          <img class="secciones__articulo__img" src="./multimedia/img/icons2.png"
+            alt="seccion especies de dinosaurios" />
+          <p class="secciones__articulo__descrpcion">
+            La Paleontologia es la Ciencia que estudia los seres orgánicos que
+            habitaron la Tierra en épocas pasadas
+          </p>
+          <a href="./views/paleontology.html">
+            <button class="secciones__articulo__boton">#Paleontologia</button>
+          </a>
+        </article>
+        <article class="secciones__articulo col-10 col-sm-8 col-md-5 col-lg-3">
+          <img class="secciones__articulo__img" src="./multimedia/img/icons3.png" alt="seccion paleontologia" />
+          <p class="secciones__articulo__descrpcion">
+            Conoce todas las especies de Dinosaurios que habitaron nuestro
+            planeta y sus caracteristicas
+          </p>
+          <a href="./views/dinosaurs.html">
+            <button class="secciones__articulo__boton">#Especies</button>
+          </a>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="pie row align-items-center">
+    <div class="col-12 col-md-4 d-flex justify-content-md-start justify-content-center mt-3">
+      <a href="index.html">
+        <img src="./multimedia/img/logosmall.png" alt="Logo de wikisaur" class="pie__logo" />
+      </a>
+    </div>
+    <div class="col-12 col-md-4 d-flex justify-content-center justify-content-center mt-3">
+      <h6 class="pie__firma">Design by Nahuel Vignatti - 2022</h6>
+    </div>
+    <div class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center mt-3">
+      <section class="pie__social">
+        <a href="http://www.facebook.com"><i class="bi bi-facebook pie__social__icon"></i></a>
+        <a href="http://www.instagram.com"><i class="bi bi-instagram pie__social__icon"></i></a>
+        <a href="https://github.com/nahuel-vignatti/proyecto_final_wikisaur"><i
+            class="bi bi-github pie__social__icon"></i></a>
+      </section>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

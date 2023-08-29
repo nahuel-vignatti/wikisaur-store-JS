@@ -1,0 +1,171 @@
+/* ========================================================================
+                            IMPORTANTE
+
+    Este es el archivo de CSS correspondiente al TP Final de JS.
+
+   ======================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,600");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  /* background-color: #f9f5f0; */
+  display: flex;
+  flex-direction: column;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titulo {
+  font-family: "Titillium Web";
+  color: whitesmoke;
+  font-size: 4rem;
+}
+.subtitulo {
+  font-family: "Titillium Web";
+  color: whitesmoke;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.titulo_productos {
+  color: whitesmoke;
+  font-size: 4rem;
+  text-shadow: 0 0 0.3rem whitesmoke;
+}
+.link {
+  color: #212529;
+  text-decoration: none;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+.boton {
+  width: 15rem;
+  height: 4rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: rgba(168, 168, 168, 0.651);
+  color: whitesmoke;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+}
+.botonFiltro {
+  font-size: 1rem;
+  width: 30rem;
+  text-align: center;
+}
+.boton:hover {
+  box-shadow: 2px 2px 6px #535353, 2px 2px 6px #535353;
+}
+.boton_carrito {
+  margin: 0 25%;
+}
+.btnEliminar {
+  font-size: 1.2rem;
+}
+.boton_carrito {
+  height: 4rem;
+}
+
+#iconoCarrito {
+  font-size: 3rem;
+  color: whitesmoke;
+  text-shadow: 0 0 0.3rem whitesmoke;
+}
+#badgeCarrito {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+  font-size: 1rem;
+  background-color: #000 !important;
+}
+.texto {
+  font-family: "Titillium Web";
+  font-weight: bolder;
+}
+.fila {
+  width: 90%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap; /* Con flex wrap, cuando se agreguen mas de 3 productos van bajando a la fila siguiente */
+  gap: 2rem;
+  color: whitesmoke;
+}
+.producto {
+  font-family: "Maven Pro", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: whitesmoke;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border: 2px solid whitesmoke;
+  border-radius: 1rem;
+  width: 30%;
+  height: 45rem;
+  box-shadow: 2px 2px 6px #535353, 2px 2px 6px #535353;
+}
+.productoCarrito {
+  color: whitesmoke;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 2px solid whitesmoke;
+  border-radius: 1rem;
+  width: 90%;
+  height: auto;
+}
+.titulo_prod_carrito {
+  font-size: 2rem;
+}
+.descripcion_prod_carrito {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+.tostada {
+  font-size: 1.5rem;
+  color: whitesmoke;
+}
+p {
+  font-size: 1.5rem;
+}
+.opciones {
+  color: whitesmoke;
+}
+
+.filtro {
+  font-size: 1.5rem;
+}
+.imgProducto {
+  width: 100%;
+  max-width: 28rem;
+  height: auto;
+}
+.imgCarrito {
+  width: 100%;
+  height: auto;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

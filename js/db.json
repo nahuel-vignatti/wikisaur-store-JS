@@ -1,0 +1,14 @@
+[
+  { "nombre": "Remera Rex", "precio": 5000, "tipo": "Remera", "codigo": "R1" , "urlImg": "remera1.webp"},
+  { "nombre": "Dinos con Pie", "precio": 2500, "tipo": "Juguete", "codigo": "T1" , "urlImg": "toy1.webp"},
+  { "nombre": "Puzzle Rex", "precio": 3000, "tipo": "Puzzle", "codigo": "P1" , "urlImg": "puzzle1.webp"},
+  { "nombre": "Rex wooden", "precio": 7550, "tipo": "Juguete", "codigo": "T2" , "urlImg": "toy2.webp"},
+  { "nombre": "Remera Ovnis","precio": 7500,"tipo": "Remera","codigo": "R2" , "urlImg": "remera2.webp"},
+  { "nombre": "Libro Puzzle", "precio": 1970, "tipo": "Puzzle", "codigo": "P2" , "urlImg": "puzzle2.webp"},
+  { "nombre": "Cabeza Rex", "precio": 3550, "tipo": "Juguete", "codigo": "T3" , "urlImg": "toy3.webp"},
+  { "nombre": "Rompecabezas Dino","precio": 1500,"tipo": "Puzzle","codigo": "P3" , "urlImg": "puzzle3.webp"},
+  { "nombre": "Esqueleto Velociraptor", "precio": 6000, "tipo": "Juguete", "codigo": "T4" , "urlImg": "toy4.webp"},
+  { "nombre": "Remera Unstoppable", "precio": 9500, "tipo": "Remera", "codigo": "R3" , "urlImg": "remera3.webp"},
+  { "nombre": "Puzzles de madera","precio": 1000,"tipo": "Puzzle","codigo": "P4", "urlImg": "puzzle4.webp"},
+  { "nombre": "Rex Grande","precio": 9000,"tipo": "Juguete","codigo": "T5", "urlImg": "toy5.webp"}
+]

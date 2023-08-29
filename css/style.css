@@ -1,0 +1,499 @@
+/* ==================== IMPORTANTE ====================================================
+   Este archivo de CSS fue creado con SASS para el tp final de desarrollo web
+   no contiene estilos de lo hecho para JS. Todos los estilos del trabajo final de
+   JS estan en stylejs.css, el cual cree aparte para que sea mas facil diferenciarlo
+   ===================================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,600");
+.img_responsive, .pie__logo, .parrafo__info__img, .intro__img, .secciones__articulo__img, .parrafopaleo__info__img {
+  width: 100%;
+  height: auto; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  min-height: 100vh;
+  background: #212121;
+  overflow-x: hidden; }
+
+main {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+
+header {
+  padding-top: 1rem; }
+
+.barra__lista {
+  font-family: "Titillium Web";
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem; }
+  .barra__lista * {
+    box-sizing: border-box;
+    transition: all 0.35s ease; }
+  .barra__lista li {
+    list-style: outside none none;
+    padding: 0;
+    text-align: center; }
+  .barra__lista a {
+    padding: 0.5em 0.8em;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    text-decoration: none;
+    font-size: 2.5rem; }
+  .barra__lista a::after {
+    content: "";
+    height: 2.5rem;
+    width: 2.5rem;
+    position: absolute;
+    transition: all 0.35s ease;
+    opacity: 0;
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #2e640f;
+    border-left: 3px solid #3e8914;
+    transform: translate(100%, -50%); }
+  .barra__lista a::before {
+    content: "";
+    height: 2.5rem;
+    width: 2.5rem;
+    position: absolute;
+    transition: all 0.35s ease;
+    opacity: 0;
+    right: 0;
+    top: 0;
+    border-top: 3px solid #3e8914;
+    border-right: 3px solid #2e640f;
+    transform: translate(-100%, 50%); }
+  .barra__lista a:hover:after {
+    transform: translate(0, 0);
+    opacity: 1; }
+  .barra__lista a:hover:before {
+    transform: translate(0, 0);
+    opacity: 1; }
+  .barra__lista a:hover {
+    color: #3da35d; }
+
+nav ul li .barra__lista__logo {
+  font-size: 5rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.589);
+  transition: all 1s; }
+
+nav ul li .barra__lista__logo:hover {
+  text-shadow: 2px 2px 3px whitesmoke,4px 4px 6px whitesmoke,4px 4px 8px whitesmoke;
+  font-weight: 900; }
+
+@media screen and (max-width: 768px) {
+  .barra__lista a {
+    padding: 0.5em 0.8em;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 2rem; }
+  .barra__lista a::after {
+    content: "";
+    height: 1.5rem;
+    width: 1.5rem; }
+  .barra__lista a::before {
+    content: "";
+    height: 1.5rem;
+    width: 1.5rem; } }
+
+@media screen and (max-width: 576px) {
+  .barra__lista a {
+    padding: 0.5em 0.8em;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.2rem; }
+  .barra__lista a::after {
+    content: "";
+    height: 1.4rem;
+    width: 1.4rem; }
+  .barra__lista a::before {
+    content: "";
+    height: 1.4rem;
+    width: 1.4rem; }
+  nav ul li .barra__lista__logo {
+    font-size: 3rem; } }
+
+.pie {
+  margin-top: 2rem;
+  width: 100vw;
+  font-size: 1rem; }
+  .pie__logo {
+    max-width: 10em;
+    filter: invert(100%); }
+  .pie__firma {
+    font-family: 'Maven Pro', sans-serif;
+    color: whitesmoke;
+    text-shadow: 0px 0px 4px whitesmoke;
+    font-size: 1.5em; }
+  .pie__social {
+    margin-right: 2rem;
+    color: whitesmoke; }
+    .pie__social a:nth-child(1) {
+      margin-right: 2em; }
+    .pie__social a:nth-child(2) {
+      margin-right: 2em; }
+    .pie__social__icon {
+      color: whitesmoke;
+      font-size: 4em;
+      text-shadow: 0px 0px 4px whitesmoke; }
+    .pie__social__icon:hover {
+      color: #918787; }
+
+@media screen and (max-width: 768px) {
+  .pie__social {
+    margin-right: 0; } }
+
+.dinosaurios__titulo {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  color: whitesmoke;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 0 0 0.3rem whitesmoke; }
+
+.especie {
+  width: 90%;
+  font-size: 1rem;
+  margin-bottom: 3rem; }
+  .especie__titulo {
+    font-family: "Titillium Web";
+    color: whitesmoke;
+    margin-bottom: 1rem;
+    font-size: 3em;
+    padding-left: .5em; }
+  .especie__data {
+    font-family: 'Maven Pro', sans-serif;
+    background-color: #414141;
+    padding: 4em 2em;
+    font-size: 1em;
+    background-color: rgba(255, 255, 255, 0.671);
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px #535353, 2px 2px 6px #535353; }
+    .especie__data__info {
+      font-size: 1.5em; }
+    .especie__data__tabla {
+      background-color: #212121;
+      font-size: 1em;
+      color: whitesmoke;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      max-height: 35em; }
+      .especie__data__tabla__imagen {
+        width: 100%;
+        height: auto; }
+      .especie__data__tabla__titulo {
+        font-size: 1.5em;
+        text-align: center;
+        border-bottom: 0.1rem solid gray;
+        align-content: center;
+        align-items: center;
+        margin-bottom: 0.5em; }
+      .especie__data__tabla__fila {
+        padding-top: 0.6em;
+        font-size: 1em;
+        border-bottom: 1px solid gray; }
+        .especie__data__tabla__fila__propiedad {
+          font-size: 1.2em;
+          font-weight: bolder; }
+        .especie__data__tabla__fila__info {
+          font-size: 1.2em; }
+      .especie__data__tabla__fila:hover {
+        background-color: rgba(128, 128, 128, 0.404); }
+
+@media screen and (max-width: 992px) {
+  .especie {
+    font-size: 0.9rem; } }
+
+@media screen and (max-width: 576px) {
+  .dinosaurios__titulo {
+    font-size: 3rem; }
+  .especie {
+    font-size: 0.8rem; }
+  .especie__data__tabla__fila {
+    padding-top: 0; } }
+
+.historia__titulo {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  color: whitesmoke;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 0 0 0.3rem whitesmoke; }
+
+.parrafo {
+  font-size: 1rem;
+  width: 90%;
+  margin-bottom: 2rem; }
+  .parrafo__titulo {
+    font-family: "Titillium Web";
+    color: whitesmoke;
+    margin-bottom: 1rem;
+    font-size: 3em;
+    padding-left: 0.5em; }
+  .parrafo__info {
+    font-family: "Maven Pro", sans-serif;
+    padding: 2em 2em;
+    font-size: 1.5em;
+    background-color: rgba(255, 255, 255, 0.671);
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px #535353, 2px 2px 6px #535353; }
+
+.cometa {
+  max-width: 80rem; }
+
+@media screen and (max-width: 1024px) {
+  .parrafo {
+    font-size: 0.8rem; } }
+
+@media screen and (max-width: 768px) {
+  .parrafo {
+    font-size: 0.7rem; } }
+
+@media screen and (max-width: 576px) {
+  .historia__titulo {
+    font-size: 3rem; } }
+
+.intro {
+  gap: 10rem;
+  background-color: #414141;
+  padding: 2rem 0;
+  text-shadow: 0 0 0.3rem whitesmoke;
+  width: 100vw;
+  font-size: 4rem;
+  border-radius: 1rem; }
+  .intro__img {
+    max-width: 40rem; }
+  .intro__parrafo {
+    padding-right: 5rem; }
+    .intro__parrafo__titulo {
+      font-size: 2em;
+      font-style: italic;
+      font-weight: bolder;
+      color: whitesmoke; }
+    .intro__parrafo__subtitulo {
+      font-size: 0.5em;
+      font-style: italic;
+      color: whitesmoke; }
+
+.definicion {
+  font-family: 'Maven Pro', sans-serif;
+  margin-top: 15rem;
+  margin-bottom: 6rem;
+  width: 80%;
+  font-size: 3rem;
+  text-align: center;
+  color: whitesmoke; }
+
+.secciones {
+  font-family: 'Maven Pro', sans-serif;
+  margin-top: 5rem;
+  padding: 3rem 7rem 7rem 7rem;
+  gap: 10rem;
+  background-color: rgba(255, 255, 255, 0.719);
+  border-radius: 1rem;
+  font-size: 1rem;
+  width: 90%; }
+  .secciones__titulo {
+    font-size: 3em;
+    margin-bottom: 1.5em;
+    text-align: center; }
+  .secciones__articulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+    font-size: 1em;
+    height: 80%; }
+    .secciones__articulo__img {
+      max-width: 10em; }
+    .secciones__articulo__descrpcion {
+      text-align: center;
+      font-size: 1.5em;
+      height: 6em; }
+    .secciones__articulo__boton {
+      font-size: 1.5em;
+      font-weight: bolder;
+      color: whitesmoke;
+      margin-top: 0.5;
+      margin-bottom: 1rem;
+      font-family: "Titillium Web";
+      text-transform: uppercase;
+      width: 15rem;
+      height: 5rem;
+      border: none;
+      border-radius: 1rem;
+      background-color: rgba(24, 24, 24, 0.76);
+      text-shadow: 0 0 2px; }
+    .secciones__articulo__boton:hover {
+      background-color: rgba(54, 52, 52, 0.76); }
+
+@media screen and (max-width: 1200px) {
+  .intro {
+    font-size: 3.5rem; }
+    .intro__img {
+      max-width: 30rem; }
+    .intro__parrafo {
+      padding-right: 0;
+      padding-bottom: 0; }
+  .secciones {
+    font-size: 1rem;
+    padding: 3rem 5rem; }
+    .secciones__articulo__descripcion {
+      height: 7em; }
+    .secciones__articulo__boton {
+      margin-top: 1em; } }
+
+@media screen and (max-width: 768px) {
+  .intro {
+    font-size: 3rem; }
+    .intro__img {
+      max-width: 30rem; }
+    .intro__parrafo {
+      text-align: center;
+      padding-right: 0;
+      padding-bottom: 0; }
+  .secciones {
+    font-size: 1.1rem;
+    padding: 5rem 2rem; }
+    .secciones__articulo__boton {
+      margin-top: 0em; }
+  .definicion {
+    font-size: 2.5rem; } }
+
+@media screen and (max-width: 576px) {
+  .intro {
+    font-size: 2rem; }
+    .intro__img {
+      max-width: 200px; }
+    .intro__parrafo {
+      padding-right: 0;
+      padding-bottom: 2rem; }
+  .secciones {
+    width: 80%;
+    font-size: 0.9rem;
+    padding: 5rem 2rem; }
+    .secciones__articulo__descripcion {
+      height: 4em; }
+    .secciones__articulo__boton {
+      margin-top: 0em; }
+  .definicion {
+    margin-top: 5rem;
+    margin-bottom: 0; } }
+
+.paleo__titulo {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  color: whitesmoke;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 0 0 0.3rem whitesmoke; }
+
+.parrafopaleo {
+  font-size: 1rem;
+  width: 90%;
+  margin-bottom: 2rem; }
+  .parrafopaleo__titulo {
+    font-family: "Titillium Web";
+    color: whitesmoke;
+    margin-bottom: 1rem;
+    font-size: 3em;
+    padding-left: 0.5em; }
+  .parrafopaleo__info {
+    font-family: "Maven Pro", sans-serif;
+    padding: 2em 2em;
+    font-size: 1.5em;
+    background-color: rgba(255, 255, 255, 0.671);
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px #535353, 2px 2px 6px #535353; }
+
+.dino1 {
+  max-width: 70rem; }
+
+@media screen and (max-width: 1024px) {
+  .parrafopaleo {
+    font-size: 0.8rem; } }
+
+@media screen and (max-width: 768px) {
+  .parrafopaleo {
+    font-size: 0.7rem; } }
+
+@media screen and (max-width: 576px) {
+  .paleo__titulo {
+    font-size: 3rem; }
+  .parrafopaleo {
+    font-size: 0.6rem; } }
+
+.formcontacto {
+  margin: 3rem 0;
+  font-family: "Titillium Web";
+  padding: 3rem;
+  width: 70%;
+  font-size: 1rem;
+  color: whitesmoke;
+  border-radius: 10px;
+  border: 2px solid rgba(168, 168, 168, 0.418); }
+  .formcontacto__titulo {
+    font-size: 6em;
+    margin-bottom: 1em;
+    text-shadow: 0 0 4px whitesmoke; }
+  .formcontacto__label {
+    text-align: left;
+    font-size: 2em; }
+  .formcontacto__input {
+    display: block;
+    width: 100%;
+    color: whitesmoke;
+    font-size: 2em;
+    border: 0;
+    border-bottom: 2px solid rgba(168, 168, 168, 0.418);
+    background: none; }
+    .formcontacto__input:nth-of-type(1) {
+      margin-bottom: 1em;
+      height: 3em; }
+    .formcontacto__input:nth-of-type(2) {
+      margin-bottom: 1em;
+      height: 3em; }
+  .formcontacto .texto {
+    height: 5em; }
+  .formcontacto__boton {
+    border: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: whitesmoke;
+    margin-top: 1em;
+    width: 30%;
+    max-width: 10em;
+    height: 3em;
+    border-radius: 5px;
+    background-color: rgba(168, 168, 168, 0.651); }
+    .formcontacto__boton:nth-of-type(1) {
+      margin-right: 3em; }
+  .formcontacto__boton:hover {
+    background-color: rgba(168, 168, 168, 0.425); }
+  .formcontacto__imagen {
+    margin-top: 3em;
+    width: auto;
+    height: 100%;
+    max-height: 45em; }
+
+@media screen and (max-width: 768px) {
+  .formcontacto {
+    font-family: "Titillium Web";
+    padding: 2rem;
+    width: 80%;
+    font-size: 0.7rem; }
+    .formcontacto__imagen {
+      display: none; } }
